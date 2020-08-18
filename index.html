@@ -10,88 +10,267 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="massage" viewBox="0 0 24 24">
-        <path fill-rule="evenodd"
-            d="M1.75 3A1.75 1.75 0 000 4.75v14c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0024 18.75v-14A1.75 1.75 0 0022.25 3H1.75zM1.5 4.75a.25.25 0 01.25-.25h20.5a.25.25 0 01.25.25v.852l-10.36 7a.25.25 0 01-.28 0l-10.36-7V4.75zm0 2.662V18.75c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0L1.5 7.412z">
-        </path>
+
+    <symbol id="phone" viewBox="0 0 512.021 512.021">
+        <g>
+            <path
+                d="m367.988 512.021c-16.528 0-32.916-2.922-48.941-8.744-70.598-25.646-136.128-67.416-189.508-120.795s-95.15-118.91-120.795-189.508c-8.241-22.688-10.673-46.108-7.226-69.612 3.229-22.016 11.757-43.389 24.663-61.809 12.963-18.501 30.245-33.889 49.977-44.5 21.042-11.315 44.009-17.053 68.265-17.053 7.544 0 14.064 5.271 15.645 12.647l25.114 117.199c1.137 5.307-.494 10.829-4.331 14.667l-42.913 42.912c40.482 80.486 106.17 146.174 186.656 186.656l42.912-42.913c3.838-3.837 9.361-5.466 14.667-4.331l117.199 25.114c7.377 1.581 12.647 8.101 12.647 15.645 0 24.256-5.738 47.224-17.054 68.266-10.611 19.732-25.999 37.014-44.5 49.977-18.419 12.906-39.792 21.434-61.809 24.663-6.899 1.013-13.797 1.518-20.668 1.519zm-236.349-479.321c-31.995 3.532-60.393 20.302-79.251 47.217-21.206 30.265-26.151 67.49-13.567 102.132 49.304 135.726 155.425 241.847 291.151 291.151 34.641 12.584 71.866 7.64 102.132-13.567 26.915-18.858 43.685-47.256 47.217-79.251l-95.341-20.43-44.816 44.816c-4.769 4.769-12.015 6.036-18.117 3.168-95.19-44.72-172.242-121.772-216.962-216.962-2.867-6.103-1.601-13.349 3.168-18.117l44.816-44.816z" />
+        </g>
     </symbol>
-    <symbol id="logo" viewBox="0 0 164 35" fill="none" fill-rule="evenodd">
-        <path fill="#000"
+
+    <symbol id="mail" viewBox="0 0 512 512">
+        <g>
+            <path d="M467,61H45C20.218,61,0,81.196,0,106v300c0,24.72,20.128,45,45,45h422c24.72,0,45-20.128,45-45V106
+                    C512,81.28,491.872,61,467,61z M460.786,91L256.954,294.833L51.359,91H460.786z M30,399.788V112.069l144.479,143.24L30,399.788z
+                     M51.213,421l144.57-144.57l50.657,50.222c5.864,5.814,15.327,5.795,21.167-0.046L317,277.213L460.787,421H51.213z M482,399.787
+                    L338.213,256L482,112.212V399.787z" />
+        </g>
+    </symbol>
+
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z" />
+        </g>
+    </symbol>
+
+    <symbol id="instagram" viewBox="0 0 512 512">
+        <g>
+            <g>
+                <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+                    C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+                    h192c61.76,0,112,50.24,112,112V352z" />
+            </g>
+        </g>
+        <g>
+            <g>
+                <path
+                    d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+                    c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z" />
+            </g>
+        </g>
+        <g>
+            <g>
+                <circle cx="393.6" cy="118.4" r="17.056" />
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 512 512">
+        <g>
+            <path
+                d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+        </g>
+    </symbol>
+
+    <symbol id="vk" viewBox="0 0 24 24">
+        <g>
+            <path
+                d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+        </g>
+    </symbol>
+
+    <symbol id="down" viewBox="0 0 284.929 284.929">
+        <g>
+            <path d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441
+                L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082
+                c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647
+                c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z" />
+        </g>
+    </symbol>
+
+    <symbol id="logo" viewBox="0 0 164 35">
+        <path
             d="M32.003 16.524c0 .288-.115.564-.32.768L18.3 30.712c-.226.224-.454.324-.738.324-.292 0-.55-.11-.77-.325l-.943-.886a.41.41 0 0 1-.01-.59l15.45-15.46c.262-.263.716-.078.716.29v2.46zm-17.167 10.12l-.766.685a.642.642 0 0 1-.872-.02L3.01 17.362c-.257-.25-.4-.593-.4-.95v-1.858c0-.67.816-1.007 1.298-.536l10.814 10.56c.188.187.505.57.505 1.033 0 .296-.068.715-.39 1.035zM5.73 7.395L9.236 3.93a.421.421 0 0 1 .592 0l11.736 11.603a3.158 3.158 0 0 1 0 4.5l-3.503 3.462a.423.423 0 0 1-.59 0L5.732 11.89a3.132 3.132 0 0 1-.937-2.25c0-.85.332-1.65.935-2.246zm13.89 1.982l3.662-3.62a3.232 3.232 0 0 1 2.737-.897c.722.098 1.378.47 1.893.978l3.708 3.667a.41.41 0 0 1 0 .585l-5.64 5.576a.419.419 0 0 1-.59 0l-5.77-5.704a.411.411 0 0 1 0-.585zm14.56-.687L26.014.475a.869.869 0 0 0-1.228-.002L18.307 6.94c-.5.5-1.316.5-1.82.004l-6.48-6.4A.87.87 0 0 0 8.793.542L.447 8.67C.16 8.95 0 9.33 0 9.727v7.7c0 .392.158.77.44 1.048l16.263 16.072a.87.87 0 0 0 1.22 0l16.25-16.073c.28-.278.438-.655.438-1.048V9.73c0-.39-.153-.763-.43-1.04z">
         </path>
-        <path fill="#000"
+        <path
             d="M62.852 20.51l2.58-6.716a.468.468 0 0 1 .87 0l2.58 6.717h-6.03zm5.856-12.428c-.184-.48-.65-.8-1.17-.8h-3.342c-.52 0-.986.32-1.17.8l-7.083 18.5c-.21.552.2 1.14.796 1.14h2.753c.353 0 .67-.215.796-.542l.738-1.922a.849.849 0 0 1 .795-.542h8.088a.85.85 0 0 1 .796.542l.74 1.922c.125.327.44.543.795.543h2.754a.843.843 0 0 0 .796-1.14l-7.082-18.5zm93.504-.8h-2.715a1.86 1.86 0 0 0-1.677 1.047l-5.393 11.162-5.393-11.163a1.858 1.858 0 0 0-1.677-1.047h-2.715a.889.889 0 0 0-.893.883V26.84c0 .487.4.883.892.883h2.608a.889.889 0 0 0 .893-.883v-9.686l4.945 10.072c.15.304.46.497.803.497h1.073a.893.893 0 0 0 .803-.497l4.945-10.072v9.686c0 .487.4.883.894.883h2.608a.889.889 0 0 0 .893-.883V8.166c0-.487-.4-.883-.893-.883zm-106.972 8.8h-8.63V11.49h10.918a.88.88 0 0 0 .83-.578l.888-2.464a.872.872 0 0 0-.83-1.163h-15.18c-.486 0-.88.39-.88.87v18.7c0 .48.394.87.88.87h2.492c.486 0 .88-.39.88-.87V20.29h7.743a.88.88 0 0 0 .83-.578l.89-2.464a.872.872 0 0 0-.83-1.163zm51.76 7.61h-3.615V11.315H107c3.828 0 6.41 2.517 6.41 6.188 0 3.672-2.582 6.19-6.41 6.19zm-.124-16.41h-7.128c-.486 0-.88.39-.88.872v18.698c0 .48.394.87.88.87h7.128c6.453 0 10.912-4.44 10.912-10.16v-.117c0-5.72-4.46-10.162-10.912-10.162zm-11.947.03h-2.642a.87.87 0 0 0-.876.866v12.36l-8.755-12.72a1.242 1.242 0 0 0-1.023-.535H78.32a.873.873 0 0 0-.876.867v18.706c0 .48.393.867.877.867h2.64a.872.872 0 0 0 .878-.867V14.71l8.608 12.478c.23.334.613.535 1.022.535h3.46a.872.872 0 0 0 .877-.867V8.178a.87.87 0 0 0-.876-.867zm40.71 10.3c0 3.323-2.712 6.016-6.056 6.016-3.345 0-6.056-2.693-6.056-6.015v-.22c0-3.322 2.71-6.015 6.056-6.015 3.344 0 6.055 2.693 6.055 6.015v.22zm-6.056-10.44c-5.694 0-10.31 4.576-10.31 10.22v.22c0 5.646 4.616 10.22 10.31 10.22 5.693 0 10.308-4.574 10.308-10.22v-.22c0-5.644-4.615-10.22-10.308-10.22z">
         </path>
     </symbol>
-    <symbol id="drop-down" viewBox="2 0 25 25">
-        <path fill-rule="evenodd"
-            d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z">
-        </path>
+
+    <symbol id="home" viewBox="0 0 512 512">
+        <g>
+            <path
+                d="m426 495.983h-340c-25.364 0-46-20.635-46-46v-242.02c0-8.836 7.163-16 16-16s16 7.164 16 16v242.02c0 7.72 6.28 14 14 14h340c7.72 0 14-6.28 14-14v-242.02c0-8.836 7.163-16 16-16s16 7.164 16 16v242.02c0 25.364-20.635 46-46 46z" />
+            <path
+                d="m496 263.958c-4.095 0-8.189-1.562-11.313-4.687l-198.989-198.987c-16.375-16.376-43.02-16.376-59.396 0l-198.988 198.988c-6.248 6.249-16.379 6.249-22.627 0-6.249-6.248-6.249-16.379 0-22.627l198.988-198.989c28.852-28.852 75.799-28.852 104.65 0l198.988 198.988c6.249 6.249 6.249 16.379 0 22.627-3.123 3.125-7.218 4.687-11.313 4.687z" />
+            <path
+                d="m320 495.983h-128c-8.837 0-16-7.164-16-16v-142c0-27.57 22.43-50 50-50h60c27.57 0 50 22.43 50 50v142c0 8.836-7.163 16-16 16zm-112-32h96v-126c0-9.925-8.075-18-18-18h-60c-9.925 0-18 8.075-18 18z" />
+        </g>
     </symbol>
+
+    <symbol id="burger" viewBox="0 0 384 384">
+        <g>
+            <g>
+                <rect x="0" y="277.333" width="384" height="42.667" />
+                <rect x="0" y="170.667" width="384" height="42.667" />
+                <rect x="0" y="64" width="384" height="42.667" />
+            </g>
+        </g>
+    </symbol>
+
+    <symbol id="cross" viewBox="0 0 96 96">
+        <g>
+            <title />
+            <g>
+                <path d="M53.657,48l25.171-25.172c1.562-1.562,1.562-4.095,0-5.656c-1.562-1.562-4.094-1.562-5.656,0L48,42.343L22.829,17.172
+                c-1.562-1.562-4.095-1.562-5.657,0c-1.562,1.562-1.562,4.095,0,5.656L42.344,48L17.172,73.172c-1.562,1.562-1.562,4.095,0,5.656
+                C17.953,79.609,18.977,80,20,80s2.048-0.391,2.829-1.172L48,53.657l25.172,25.171C73.953,79.609,74.977,80,76,80
+                s2.048-0.391,2.828-1.172c1.562-1.562,1.562-4.095,0-5.656L53.657,48z" />
+            </g>
+        </g>
+    </symbol>
+
 </svg>
 
     <header class="header">
-	<div class="container">
-		<div class="header__top header__container">
-			<div class="header__inner">
-				<a class="header__contacts" href="+2 102 3923 3922">
-					<svg viewBox="2 -3 24 24" class="icon-svg">
-						<use xlink:href='#massage' />
-					</svg>
-					<span>+2 102 3923 3922</span>
-				</a>
-				<a class="header__contacts" href="info@domain.com">
-					<svg class="icon-svg">
-						<use xlink:href='#massage' />
-					</svg>
-					<span>info@domain.com</span>
-				</a>
-			</div>
-			<div class="header__inner">
-				<a class="header__item" href="#">
-					<svg class="icon-svg">
-						<use xlink:href='#massage' />
-					</svg>
-				</a>
-				<a class="header__item" href="#">
-					<svg class="icon-svg">
-						<use xlink:href='#massage' />
-					</svg>
-				</a>
-				<a class="header__item" href="#">
-					<svg class="icon-svg">
-						<use xlink:href='#massage' />
-					</svg>
-				</a>
+	<div class="wrap header__wrap">
+		<div class="container">
+			<div class="header__top header__container">
+				<div class="header__inner row">
+					<a class="header__contacts link" href="tel:+2 102 3923 3922">
+						<svg class="icon-svg header__icon-svg">
+							<use xlink:href='#phone' />
+						</svg>
+						<span class="header__item">+2 102 3923 3922</span>
+					</a>
+					<a class="header__contacts link" href="mailto:info@domain.com">
+						<svg class="icon-svg header__icon-svg">
+							<use xlink:href='#mail' />
+						</svg>
+						<span class="header__item">info@domain.com</span>
+					</a>
+				</div>
+				<div class="header__inner">
+					<div class="soc">
+						<ul class="soc__list">
+							<li class="soc__item">
+								<a class="soc__link" href="#">
+									<svg class="icon-svg">
+										<use xlink:href='#twitter' />
+									</svg>
+								</a>
+							</li>
+							<li class="soc__item">
+								<a class="soc__link" href="#">
+									<svg class="icon-svg">
+										<use xlink:href='#vk' />
+									</svg>
+								</a>
+							</li>
+							<li class="soc__item">
+								<a class="soc__link" href="#">
+									<svg class="icon-svg">
+										<use xlink:href='#instagram' />
+									</svg>
+								</a>
+							</li>
+							<li class="soc__item">
+								<a class="soc__link" href="#">
+									<svg class="icon-svg">
+										<use xlink:href='#facebook' />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 
+	<div class="container">
 		<div class="header__container header__bottom">
 			<a class="logo header__logo" href="#">
 				<svg class="logo__svg">
 					<use xlink:href='#logo' />
 				</svg>
 			</a>
-			<ul class="navbar">
+
+			<div class="col">
+				<div id="backg" class="backg header__backg"></div>
+				<div id="mobileMenu" class="mobile-menu header__mobile-menu col">
+					<ul class="mobile-menu__inner">
+						<svg id="mobileMenuCross" class="mobile-menu__cross-svg">
+							<use xlink:href='#cross' />
+						</svg>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link navbar__link">Главная</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link navbar__link">Недвижимость
+								<ul class="m-sub-menu">
+									<li class="m-sub-menu__item">
+										<a href="#" class="mobile-menu__link navbar__link">
+											Купить
+										</a>
+									</li>
+									<li class="m-sub-menu__item">
+										<a href="#" class="mobile-menu__link navbar__link">
+											Продать
+										</a>
+									</li>
+									<li class="m-sub-menu__item">
+										<a href="#" class="mobile-menu__link navbar__link">
+											Снять
+										</a>
+									</li>
+									<li class="m-sub-menu__item">
+										<a href="#" class="mobile-menu__link navbar__link">
+											Сдать
+										</a>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link navbar__link navbar__link_active">Блог</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link navbar__link">О нас</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" class="mobile-menu__link navbar__link">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<svg id="navbar__togle" class="header__burger-svg">
+				<use xlink:href='#burger' />
+			</svg>
+			<ul class="navbar header__navbar">
 				<li class="navbar__item">
-					<a class="navbar__link" href="#">Главная</a>
+					<a class="navbar__link navbar__link_active" href="#">Главная</a>
 				</li>
-				<li class="navbar__item">
+				<li class="navbar__item navbar__dropdown-menu">
 					<a class="navbar__link" href="#">
 						Недвижимость
-						<svg class="drop-down-svg" width="15" height="15" viewBox="1 -3 20 20">
-							<use xlink:href='#drop-down' />
+						<svg class="navbar__svg">
+							<use xlink:href='#down' />
 						</svg>
 						<ul class="dropdown-menu">
-							<li><a href="1">Купить</a></li>
-							<li><a href="1">Продать</a></li>
-							<li><a href="1">Сдать</a></li>
-							<li><a href="1">Снять</a></li>
+							<li class="dropdown-menu__item">
+								<a class="dropdown-menu__link navbar__link" href="1">Купить</a>
+							</li>
+							<li class="dropdown-menu__item">
+								<a class="dropdown-menu__link navbar__link" href="1">Продать</a>
+							</li>
+							<li class="dropdown-menu__item">
+								<a class="dropdown-menu__link navbar__link" href="1">Сдать</a>
+							</li>
+							<li class="dropdown-menu__item">
+								<a class="dropdown-menu__link navbar__link" href="1">Снять</a>
+							</li>
 						</ul>
 					</a>
 				</li>
@@ -109,6 +288,92 @@
 	</div>
 
 </header>
+    <section class="slider-section">
+
+    <div class="owl-carousel">
+        <div>
+            <div class="slider-section__item" style="background-image: url(../../img/100x100.png);">
+                <div class="slider__inner">
+                    <span class="slider__item text_big">853 S Lucerne Blvd</span>
+                    <span class="slider__item text_secondary">
+                        Los Angeles, CA 90005
+                    </span>
+                    <span class="slider__item text_big text_bright">$2,250,500</span>
+                    <span>
+                        <a class="slider__item link text_little text_wide" href="#">
+                            БОЛЬШЕ ДЕТАЙЛЕЙ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-section__item" style="background-image: url(../../img/hero_bg_2.jpg);">
+                <div class="slider__inner">
+                    <span class="slider__item text_big">853 S Lucerne Blvd</span>
+                    <span class="slider__item text_secondary">
+                        Los Angeles, CA 90005
+                    </span>
+                    <span class="slider__item text_big text_bright">$2,250,500</span>
+                    <span>
+                        <a class="slider__item link text_little text_wide" href="#">
+                            БОЛЬШЕ ДЕТАЙЛЕЙ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-section__item" style="background-image: url(../../img/map.jpg);">
+                <div class="slider__inner">
+                    <span class="slider__item text_big">853 S Lucerne Blvd</span>
+                    <span class="slider__item text_secondary">
+                        Los Angeles, CA 90005
+                    </span>
+                    <span class="slider__item text_big text_bright">$2,250,500</span>
+                    <span>
+                        <a class="slider__item link text_little text_wide" href="#">
+                            БОЛЬШЕ ДЕТАЙЛЕЙ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-section__item" style="background-image: url(../../img/avatar.jpg);">
+                <div class="slider__inner">
+                    <span class="slider__item text_big">853 S Lucerne Blvd</span>
+                    <span class="slider__item text_secondary">
+                        Los Angeles, CA 90005
+                    </span>
+                    <span class="slider__item text_big text_bright">$2,250,500</span>
+                    <span>
+                        <a class="slider__item link text_little text_wide" href="#">
+                            БОЛЬШЕ ДЕТАЙЛЕЙ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slider-section__item" style="background-image: url(../../img/1920x700.png);">
+                <div class="slider__inner">
+                    <span class="slider__item text_big">853 S Lucerne Blvd</span>
+                    <span class="slider__item text_secondary">
+                        Los Angeles, CA 90005
+                    </span>
+                    <span class="slider__item text_big text_bright">$2,250,500</span>
+                    <span>
+                        <a class="slider__item link text_little text_wide" href="#">
+                            БОЛЬШЕ ДЕТАЙЛЕЙ
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
     <section class="page-title">
     <div class="container page-title__conatiner">
         <h1 class="title">Наш Блог</h1>
@@ -125,12 +390,806 @@
         </nav>
     </div>
 </section>
+    <section class="products-section">
+    <div class="container">
+        <h2 class="title_primary products-section__title">
+            НОВАЯ НЕДВИЖИМОСТЬ ДЛЯ ВАС
+        </h2>
+    </div>
+    <div class="container row">
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/650x450.png" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/650x450.png" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/650x450.png" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/650x450.png" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/img_8.jpg" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row__item-3 products-section__item">
+            <div class="product">
+                <a href="#" class="product__link">
+                    <div class="card">
+                        <img src="../../img/" alt="product" class="card__img">
+                    </div>
+                    <div class="product__inner">
+                        <div class="product__top">
+                            <span class="product__price">
+                                $4,222,000
+                            </span>
+                            <h3 class="product__title">
+                                Студия, 31 м², 11/20 эт.
+                            </h3>
+                            <span class="product__info">
+                                Челябинск, Сосновский р-н
+                            </span>
+                        </div>
+                        <div class="more-info">
+                            <div class="row products-section__row">
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Тип дома
+                                    </span>
+                                    <span class="more-info__text">
+                                        панельный
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Отделка
+                                    </span>
+                                    <span class="more-info__text">
+                                        чистовая
+                                    </span>
+                                </div>
+                                <div class="more-info__inner">
+                                    <span class="more-info__title">
+                                        Продавец
+                                    </span>
+                                    <span class="more-info__text">
+                                        агенство
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="pagination blog__pagination">
+            <a href="#" class="pagination__item pagination__item_active">
+                1
+            </a>
+            <a href="#" class="pagination__item">2</a>
+            <a href="#" class="pagination__item">3</a>
+            <a href="#" class="pagination__item">4</a>
+            <a href="#" class="pagination__item">5</a>
+            <span>...</span>
+            <a href="#" class="pagination__item">10</a>
+        </div>
+    </div>
+
+</section>
+    <section class="product-page">
+    <div class="container">
+        <div class="row">
+            <div class="row__item-2">
+                <div class="col">
+                    <div class="slider">
+                        <div class="item">
+                            <img src="../../img/avatar.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/hero_bg_2.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/100x100.png" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/img_8.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/vkcom.svg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/1920x700.png" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/avatar.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/hero_bg_2.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/100x100.png" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/img_8.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/vkcom.svg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="../../img/1920x700.png" alt="slide">
+                        </div>
+                        <span class="prev" onclick="minusSlide()">&#10094;</span>
+                        <span class="next" onclick="plusSlide()">&#10095;</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="slider-dots">
+                        <img src="../../img/avatar.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(1)">
+                        <img src="../../img/hero_bg_2.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(2)">
+                        <img src="../../img/100x100.png" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(3)">
+                        <img src="../../img/img_8.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(4)">
+                        <img src="../../img/vkcom.svg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(5)">
+                        <img src="../../img/1920x700.png" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(6)">
+                        <img src="../../img/avatar.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(7)">
+                        <img src="../../img/hero_bg_2.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(8)">
+                        <img src="../../img/100x100.png" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(9)">
+                        <img src="../../img/img_8.jpg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(10)">
+                        <img src="../../img/vkcom.svg" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(11)">
+                        <img src="../../img/1920x700.png" alt="slider navigation" class="slider-dots_item"
+                            onclick="currentSlide(12)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row__item-2">
+                        <span class="text_bright product-page__price">$1,000,500</span>
+                    </div>
+                    <div class="row__item-2 product-page__element">
+                        <div class="row">
+                            <div class="row__item-3">
+                                <div class="text_secondary text_wide ">Цена за м²</div>
+                                <span>300$</span>
+                            </div>
+                            <div class="row__item-3">
+                                <div class="text_secondary text_wide ">Площадь</div>
+                                <span>52</span>
+                            </div>
+                            <div class="row__item-3">
+                                <div class="text_secondary text_wide ">Комнат</div>
+                                <span>3</span>
+                            </div>
+                            <div class="row__item-3"></div>
+                            <div class="row__item-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <h3 class="subtitle subtitle_big">Информация</h3>
+                    </div>
+                    <div class="row product-page__item product-page__info">
+                        <ul class="list product-page__list">
+                            <li class="list__item">
+                                <span class="list__text text">Тип дома:</span>
+                                панельный
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Тип жилья:</span>
+                                квартира
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Этаж:</span>
+                                3 из 16
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Количество комнат:</span>
+                                5
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Общая площадь:</span>
+                                40.3 м²
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Жилая площадь:</span>
+                                27.7 м²
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">Вид из окна:</span>
+                                во двор
+                            </li>
+                            <li class="list__item">
+                                <span class="list__text text">
+                                    Есть балкон или лоджия
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col product-page__item">
+                        <div class="subtitle">
+                            Челябинская область, Челябинск, Комсомольский пр-т, 46
+                        </div>
+                        <div class="subtitle">
+                            р-н Курчатовский
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        КАРТА
+                        <div><img style="width: 100%;" src="../../img/map.jpg" alt="owl"></div>
+                    </div>
+                    <div class="row">
+                        <h3 class="subtitle subtitle_big">Больше информации</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas deserunt
+                            architecto eveniet obcaecati soluta, vel impedit necessitatibus voluptates eum fugiat, autem
+                            illo enim maiores ab mollitia molestias. Tempore, aliquam saepe!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row__item-4 col product-page__inner">
+                <div class="row product-page__wrap">
+                    <div class="user">
+                        <div class="user__inner">
+                            <div class="user__name text">Алексей</div>
+                            <div class="text">Частное лицо</div>
+                        </div>
+                        <div class="wrap">
+                            <img class="user__icon" src="../../img/avatar.jpg" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap product-page__wrap">
+                    <a href="tel: +2 102 3923 3922 " class="btn">
+                        +2 102 3923 3922
+                    </a>
+                </div>
+                <div class="row product-page__wrap">
+                    <div style="width: 100%; height: 300px; background: cornsilk;">
+                        КАЛЬКУЛЯТОР
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="title_primary">
+            Похожие объявления
+        </h1>
+        <div class="row">
+            <div class="row__item-3 products-section__item">
+                <div class="product">
+                    <a href="#" class="product__link">
+                        <div class="card">
+                            <img src="../../img/650x450.png" alt="product" class="card__img">
+                        </div>
+                        <div class="product__inner">
+                            <div class="product__top">
+                                <span class="product__price">
+                                    $4,222,000
+                                </span>
+                                <h3 class="product__title">
+                                    Студия, 31 м², 11/20 эт.
+                                </h3>
+                                <span class="product__info">
+                                    Челябинск, Сосновский р-н
+                                </span>
+                            </div>
+                            <div class="more-info">
+                                <div class="row products-section__row">
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Тип дома
+                                        </span>
+                                        <span class="more-info__text">
+                                            панельный
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Отделка
+                                        </span>
+                                        <span class="more-info__text">
+                                            чистовая
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Продавец
+                                        </span>
+                                        <span class="more-info__text">
+                                            агенство
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row__item-3 products-section__item">
+                <div class="product">
+                    <a href="#" class="product__link">
+                        <div class="card">
+                            <img src="../../img/650x450.png" alt="product" class="card__img">
+                        </div>
+                        <div class="product__inner">
+                            <div class="product__top">
+                                <span class="product__price">
+                                    $4,222,000
+                                </span>
+                                <h3 class="product__title">
+                                    Студия, 31 м², 11/20 эт.
+                                </h3>
+                                <span class="product__info">
+                                    Челябинск, Сосновский р-н
+                                </span>
+                            </div>
+                            <div class="more-info">
+                                <div class="row products-section__row">
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Тип дома
+                                        </span>
+                                        <span class="more-info__text">
+                                            панельный
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Отделка
+                                        </span>
+                                        <span class="more-info__text">
+                                            чистовая
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Продавец
+                                        </span>
+                                        <span class="more-info__text">
+                                            агенство
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row__item-3 products-section__item">
+                <div class="product">
+                    <a href="#" class="product__link">
+                        <div class="card">
+                            <img src="../../img/650x450.png" alt="product" class="card__img">
+                        </div>
+                        <div class="product__inner">
+                            <div class="product__top">
+                                <span class="product__price">
+                                    $4,222,000
+                                </span>
+                                <h3 class="product__title">
+                                    Студия, 31 м², 11/20 эт.
+                                </h3>
+                                <span class="product__info">
+                                    Челябинск, Сосновский р-н
+                                </span>
+                            </div>
+                            <div class="more-info">
+                                <div class="row products-section__row">
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Тип дома
+                                        </span>
+                                        <span class="more-info__text">
+                                            панельный
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Отделка
+                                        </span>
+                                        <span class="more-info__text">
+                                            чистовая
+                                        </span>
+                                    </div>
+                                    <div class="more-info__inner">
+                                        <span class="more-info__title">
+                                            Продавец
+                                        </span>
+                                        <span class="more-info__text">
+                                            агенство
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="contacts-page">
+    <div class="container">
+        <div class="row">
+            <div class="contacts-page__item contacts-page__col">
+                <div class="form">
+                    <form class="form__inner" action="">
+                        <div class="col">
+                            <div class="form__item col">
+                                <label for="name" class="form__subtitle">
+                                    Ваше Имя
+                                </label>
+                                <input id="name" type="text" class="form__text form__element" form__element
+                                    placeholder="Ваше Имя">
+                            </div>
+                            <div class="form__item col">
+                                <label for="email" class="form__subtitle">
+                                    Ваша Электронная Почта
+                                </label>
+                                <input id="email" type="email" class="form__message form__element"
+                                    placeholder="Ваша Электронная Почта">
+                            </div>
+                            <div class="form__item col">
+                                <label for="subject" class="form__subtitle">
+                                    Тема Сообщения
+                                </label>
+                                <input id="subject" type="text" class="form__text form__element"
+                                    placeholder="Тема Сообщения">
+                            </div>
+                            <div class="form__item col">
+                                <label for="message" class="form__subtitle">
+                                    Сообщение
+                                </label>
+                                <textarea id="message" name="message" id="message" cols="30" rows="5"
+                                    class="form__textarea form__element" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <div class="form__item col">
+                                <div class="wrap">
+                                    <input class="form__submit form__element btn" type="submit"
+                                        value="Отправить сообщение">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row__item-3 contacts-page__col">
+                <div class="contacts">
+                    <div class="col">
+                        <h3 class="subtitle">КОНТАКТНАЯ ИНФОМАЦИЯ</h3>
+                        <div class="soc contacts__item">
+                            <ul class="soc__list">
+                                <li class="soc__item">
+                                    <a class="soc__link" href="#">
+                                        <svg class="icon-svg">
+                                            <use xlink:href='#twitter' />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc__item">
+                                    <a class="soc__link" href="#">
+                                        <svg class="icon-svg">
+                                            <use xlink:href='#vk' />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc__item">
+                                    <a class="soc__link" href="#">
+                                        <svg class="icon-svg">
+                                            <use xlink:href='#instagram' />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc__item">
+                                    <a class="soc__link" href="#">
+                                        <svg class="icon-svg">
+                                            <use xlink:href='#facebook' />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text subtitle_bold">Телефон</p>
+                        <div class="contacts__item">
+                            <a href="tel:+1 232 3235 324" class="link">
+                                +1 232 3235 324
+                            </a>
+                        </div>
+                        <p class="text subtitle_bold">
+                            Почтовый ящик
+                        </p>
+                        <div class="contacts__item">
+                            <a href="mailto:info@domain.com" class="link">youremail@domain.com
+                            </a>
+                        </div>
+                        <p class="text subtitle_bold">Адресс</p>
+                        <p class="text contacts__item">
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </p>
+                        <div class="wrap contacts__item">
+                            <button class="btn">На Карте</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1>Карта</h1>
+            <div><img class="card__img" src="../../img/1920x700.png" alt="Карта"></div>
+        </div>
+    </div>
+
+</section>
+    <section class="page-404">
+    <div class="container">
+        <div class="row page-404__row">
+            <div class="row__item-2 page-404__item page-404__item_background">
+                <h1 class="title_primary">Страница не найдена</h1>
+                <p class="text">
+                    Возможно, вы ошиблись адресом, или данная страница более не существует
+                </p>
+                <div class="row">
+                    <a href="#" class="btn page-404__btn">На главную</a>
+                </div>
+            </div>
+            <div class="row__item-2 page-404__item">
+                <div class="wrap">
+                    <span class="page-404__trans">404</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <section class="blog">
     <div class="container">
         <div class="row">
-            <div class="row__item-3">
+            <div class="row__item-3 blog__item">
                 <div class="card blog__card">
-                    <a href="#" class="link">
+                    <a href="#">
                         <img class="card__img" src="../../img/650x450.png" alt="blog">
                     </a>
                     <div class="card__body">
@@ -148,9 +1207,29 @@
                     </div>
                 </div>
             </div>
-            <div class="row__item-3">
+            <div class="row__item-3 blog__item">
                 <div class="card blog__card">
-                    <a href="#" class="link">
+                    <a href="#">
+                        <img class="card__img" src="../../img/hero_bg_2.jpg" alt="blog">
+                    </a>
+                    <div class="card__body">
+                        <div class="text text_little">JAN 20TH, 2019</div>
+                        <div class="card__title card__title_normal">
+                            <a href="#" class="link">
+                                Когда продать и за сколько продать?
+                            </a>
+                        </div>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
+                            veniam
+                            quae sunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row__item-3 blog__item">
+                <div class="card blog__card">
+                    <a href="#">
                         <img class="card__img" src="../../img/650x450.png" alt="blog">
                     </a>
                     <div class="card__body">
@@ -168,27 +1247,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row__item-3">
-                <div class="card blog__card">
-                    <a href="#" class="link">
-                        <img class="card__img" src="../../img/650x450.png" alt="blog">
-                    </a>
-                    <div class="card__body">
-                        <div class="text text_little">JAN 20TH, 2019</div>
-                        <div class="card__title card__title_normal">
-                            <a href="#" class="link">
-                                Когда продать и за сколько продать?
-                            </a>
-                        </div>
-                        <p class="text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem
-                            veniam
-                            quae sunt.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row__item-3">
+            <div class="row__item-3 blog__item">
                 <div class="card blog__card">
                     <a href="#">
                         <img class="card__img" src="../../img/1920x700.png" alt="blog">
@@ -208,9 +1267,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row__item-3">
+            <div class="row__item-3 blog__item">
                 <div class="card blog__card">
-                    <a href="#" class="link">
+                    <a href="#">
                         <img class="card__img" src="../../img/650x450.png" alt="blog">
                     </a>
                     <div class="card__body">
@@ -244,36 +1303,6 @@
             </div>
         </div>
 
-    </div>
-</section>
-    <section>
-    <div>
-        <img style="width: 100%;" src="../../img/1920x700.png" alt="ssss">
-    </div>
-    <div class="container">
-        <div>
-            <img style="width: 100%;" src="../../img/1920x700.png" alt="ssss">
-        </div>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati unde officiis veniam a. Itaque aut quis
-            distinctio vero officia similique ipsa corrupti perspiciatis? Voluptates dolorum, at fugiat impedit illum
-            natus.
-        </div>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati unde officiis veniam a. Itaque aut quis
-            distinctio vero officia similique ipsa corrupti perspiciatis? Voluptates dolorum, at fugiat impedit illum
-            natus.
-        </div>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati unde officiis veniam a. Itaque aut quis
-            distinctio vero officia similique ipsa corrupti perspiciatis? Voluptates dolorum, at fugiat impedit illum
-            natus.
-        </div>
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati unde officiis veniam a. Itaque aut quis
-            distinctio vero officia similique ipsa corrupti perspiciatis? Voluptates dolorum, at fugiat impedit illum
-            natus.
-        </div>
     </div>
 </section>
     <footer class="footer">
@@ -355,22 +1384,30 @@
                         <ul class="soc__list">
                             <li class="soc__item">
                                 <a class="soc__link" href="#">
-                                    <img class="soc__logo" src="../../img/vkcom.svg" alt="ssss">
+                                    <svg class="icon-svg">
+                                        <use xlink:href='#twitter' />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="soc__item">
                                 <a class="soc__link" href="#">
-                                    <img class="soc__logo" src="../../img/vkcom.svg" alt="ssss">
+                                    <svg class="icon-svg">
+                                        <use xlink:href='#vk' />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="soc__item">
                                 <a class="soc__link" href="#">
-                                    <img class="soc__logo" src="../../img/vkcom.svg" alt="ssss">
+                                    <svg class="icon-svg">
+                                        <use xlink:href='#instagram' />
+                                    </svg>
                                 </a>
                             </li>
                             <li class="soc__item">
                                 <a class="soc__link" href="#">
-                                    <img class="soc__logo" src="../../img/vkcom.svg" alt="ssss">
+                                    <svg class="icon-svg">
+                                        <use xlink:href='#facebook' />
+                                    </svg>
                                 </a>
                             </li>
                         </ul>
@@ -383,7 +1420,12 @@
 
 </footer>
 
+    <!-- Vendor scripts -->
+    <script src="../js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/owlcarousel2/owl.carousel.min.js"></script>
 
+    <!-- User scripts -->
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
