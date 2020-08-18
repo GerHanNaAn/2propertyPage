@@ -724,7 +724,7 @@ ul {
 
 .page-title {
   position: relative;
-  background: url(../../../img/hero_bg_2.jpg);
+  background: url(../img/hero_bg_2.jpg);
   z-index: 0; }
   .page-title__conatiner {
     height: 200px;
@@ -966,11 +966,11 @@ ul {
       .page-404__item {
         flex: 1 0 100%; } }
     .page-404__item_background {
-      background: url(../../img/home.svg) top center no-repeat;
+      background: url(img/home.svg) top center no-repeat;
       background-size: contain; }
       @media (max-width: 500px) {
         .page-404__item_background {
-          background: url(../../img/home.svg) top left no-repeat;
+          background: url(img/home.svg) top left no-repeat;
           background-size: contain; } }
   .page-404__trans {
     text-align: center;
